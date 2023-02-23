@@ -1,8 +1,8 @@
 # import shoe models
-from .models import Shoe
+from .models import Shoe, ShoeType, ShoeColor
 
 # import shoe serializers
-from .serializers import ShoeSerializer
+from .serializers import ShoeSerializer, ShoeTypeSerializer, BrandSerializer
 from django.shortcuts import get_object_or_404
 
 from rest_framework import viewsets
@@ -63,6 +63,30 @@ class ShoeViewSet(viewsets.ModelViewSet):
         shoe.delete()
         return Response('Shoe deleted.')
 
+    @action(detail=False, methods=['get'], url_name='by-color', url_path='color/(?P<id>\w+)')
+    def shoe_color(self, request, *args, **kwargs):
+        if not "id" in kwargs or not kwargs["id"]:
+            return HttpResponseBadRequest("Color is required")
+
+        shoe_color = kwargs["id"]
+
+        try:
+            queryset = Shoe.objects.filter(color=shoe_color)
+        except ValueError:
+            queryset = Shoe.objects.filter(color__name=shoe_color)
+
+        if queryset.count() == 0:
+            return HttpResponseNotFound("No shoes found for this color")
+
+        serializer = ShoeSerializer(queryset, many=True)
+        return Response(serializer.data)
+
+    @action(detail=False, methods=['get'], url_name='get-types', url_path='types')
+    def get_shoe_types(self, request, *args, **kwargs):
+        queryset = ShoeType.objects.all()
+        serializer = ShoeTypeSerializer(queryset, many=True)
+        return Response(serializer.data)
+
     @action(detail=False, methods=['get'], url_name='by-type', url_path='type/(?P<id>\w+)')
     def shoe_types(self, request, *args, **kwargs):
         if not "id" in kwargs or not kwargs["id"]:
@@ -96,7 +120,13 @@ class ShoeViewSet(viewsets.ModelViewSet):
         if queryset.count() == 0:
             return HttpResponseNotFound("No shoes found for this gender")
 
-        queryset = Shoe.objects.filter(gender=shoe_gender)
+        return Response(ShoeSerializer(queryset, many=True).data)
+
+    @action(detail=False, methods=['get'], url_name='get-brands', url_path='brands')
+    def get_shoe_brands(self, request, *args, **kwargs):
+        queryset = Brand.objects.all()
+        serializer = BrandSerializer(queryset, many=True)
+        return Response(serializer.data)
 
     @action(detail=False, methods=['get'], url_name='by-brand', url_path='brand/(?P<id>\w+)')
     def shoe_brand(self, request, *args, **kwargs):
@@ -113,4 +143,4 @@ class ShoeViewSet(viewsets.ModelViewSet):
         if queryset.count() == 0:
             return HttpResponseNotFound("No shoes found for this brand")
 
-        queryset = Shoe.objects.filter(brand=shoe_brand)
+        return Response(ShoeSerializer(queryset, many=True).data)
