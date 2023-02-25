@@ -1,5 +1,5 @@
 import { Box, Grid, GridItem, HStack, Input, List, ListItem, ListIcon, Text,  } from '@chakra-ui/react'
-import { ChatIcon, EmailIcon } from '@chakra-ui/icons'
+import { EmailIcon } from '@chakra-ui/icons'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { NavLink } from 'react-router-dom'
 
@@ -29,12 +29,6 @@ export default function Footer() {
                             <Input mb='8' placeholder="Email" isRequired variant="unstyled" borderBottom='1px solid white' rounded='none' type="email" color='whiteAlpha.800'>
                             </Input>
                             <List lineHeight='10' mb='10'>
-                                <ListItem color='whiteAlpha.800' >
-                                    <NavLink to="/">
-                                        <ListIcon as={ChatIcon} color="whiteAlpha.800" me='8'/>
-                                        Chat
-                                    </NavLink>
-                                </ListItem>
                                 <ListItem color='whiteAlpha.800'>
                                     <NavLink to="/create">
                                         <ListIcon as={EmailIcon} color="whiteAlpha.800"me='8'/>
