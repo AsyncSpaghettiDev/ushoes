@@ -25,13 +25,13 @@ import Register from './pages/Register';
 
 // layouts
 import RootLayout from './layouts/RootLayout'
-import { AuthProvider } from './context'
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route path="/" element={<Home />} />
+      <Route path="home" element={<Home />} />
       <Route path="men" element={<Men />} />
       <Route path="women" element={<Women />} />
       <Route path="categories" element={<Categories />} />
@@ -44,19 +44,14 @@ const router = createBrowserRouter(
       <Route path="search" element={<Search />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
-      <Route path="shoes">
-        <Route path=":style" element={<Categories />} />
-      </Route>
     </Route>
   )
 )
 
 function App () {
   return (
-    <AuthProvider>
-      <RouterProvider router={router} />
-    </AuthProvider>
-  )
+    <RouterProvider router={router} />
+  );
 }
 
 export default App
