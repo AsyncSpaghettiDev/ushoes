@@ -25,6 +25,7 @@ import Register from './pages/Register';
 
 // layouts
 import RootLayout from './layouts/RootLayout'
+import { AuthProvider } from './context'
 
 
 const router = createBrowserRouter(
@@ -50,7 +51,9 @@ const router = createBrowserRouter(
 
 function App () {
   return (
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   );
 }
 

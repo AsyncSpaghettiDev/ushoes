@@ -10,20 +10,23 @@ import {
   Input, 
   useColorMode, 
   useColorModeValue, 
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
   Menu,
   MenuButton,
   MenuList,
   MenuItem,
 } from '@chakra-ui/react'
 import { NavLink } from 'react-router-dom'
+import { useContext, useState } from 'react'
 import React from 'react'
+import { AuthContext } from '../context'
+
+interface LoginModalProps {
+  isOpen: boolean
+  onClose: () => void
+  overlay: React.ReactNode
+  formBackground: string
+  toggleColorMode: () => void
+}
 
 
 
@@ -46,6 +49,17 @@ export default function Navbar() {
 
   const { toggleColorMode } = useColorMode()
   const formBackground = useColorModeValue("white", "gray.700")
+
+  const [credentials, setCredentials] = useState({
+    username: '',
+    password: ''
+  })
+  const { login } = useContext(AuthContext)
+
+  const handleLogin = () => {
+    login(credentials.username, credentials.password)
+    onClose()
+  }
 
 
   return (
@@ -123,9 +137,25 @@ export default function Navbar() {
                                   <Flex alignItems="center" justifyContent="center">
                                       <Flex direction="column" background={formBackground} p={12} rounded={6}>
                                           <Heading mb={6}>Log in</Heading>
-                                          <Input placeholder="Please enter email" variant="filled" mb={3} type="email" />
-                                          <Input placeholder="*******" variant="filled" mb={6} type="password" />
-                                          <Button colorScheme="yellow" mb={6}>Log in</Button>
+                                          {/* <Input placeholder="Please enter email" variant="filled" mb={3} type="email" />
+                                          <Input placeholder="*******" variant="filled" mb={6} type="password" /> */}
+                                          <Input
+                                            placeholder="Enter your username"
+                                            variant="filled"
+                                            mb={3}
+                                            type="text"
+                                            onChange={e => setCredentials({ ...credentials, username: e.target.value })}
+                                            value={credentials.username}
+                                          />
+                                          <Input
+                                            placeholder="*******"
+                                            variant="filled"
+                                            mb={6}
+                                            type="password"
+                                            onChange={e => setCredentials({ ...credentials, password: e.target.value })}
+                                            value={credentials.password}
+                                          />
+                                          <Button colorScheme="yellow" mb={6} onClick={handleLogin}>Log in</Button>
                                           <NavLink to='register'onClick={onClose}>Create Account</NavLink>
                                           <Button mt={10} onClick={toggleColorMode} >Toggle Color Mode</Button>
                                       </Flex>
