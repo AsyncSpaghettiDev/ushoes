@@ -284,7 +284,7 @@ export default function Home () {
                 <Image
                   position='relative'
                   objectFit='cover'
-                  objectPosition='right'
+                  objectPosition='bottom left'
                   minH='24vh'
                   height='100%'
                   minW='300px'
@@ -302,28 +302,28 @@ export default function Home () {
                 >
                 <p>Casual
                 </p>
-                <Box>
-                  <Button
-                    mt='5'
-                    colorScheme='yellow'
-                    borderRadius='50px'
-                    height='45px'
-                    width='100px'
-                    me='3'
-                  >
-                  <a href="./men">Men's</a>
-                  </Button>
-                  <Button
-                    mt='5'
-                    colorScheme='yellow'
-                    borderRadius='50px'
-                    height='45px'
-                    width='100px'
-                  >
-                  <a href="./women">Women's</a>
-                  </Button>
-                </Box>
-              </Box>
+              <Box>
+              <Button
+                mt='5'
+                colorScheme='yellow'
+                borderRadius='50px'
+                height='45px'
+                width='100px'
+                me='3'
+              >
+              <a href="./men">Men's</a>
+              </Button>
+              <Button
+                mt='5'
+                colorScheme='yellow'
+                borderRadius='50px'
+                height='45px'
+                width='100px'
+              >
+              <a href="./women">Women's</a>
+              </Button>
+            </Box>
+          </Box>
 
             </Box>
           </Box>
