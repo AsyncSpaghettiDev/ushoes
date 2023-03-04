@@ -1,6 +1,6 @@
 export * from './Categories'
 
-export * from './Comfort'
+export * from './Casual'
 
 export * from './Hiking'
 

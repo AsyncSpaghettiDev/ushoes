@@ -101,10 +101,10 @@ export default function Navbar() {
                                   <NavLink to='lifestyle'>Active Lifestyle</NavLink>
                               </MenuItem>
                               <MenuItem minH='45px' as='a' href='#'>
-                                  <NavLink to='hiking'>Hiking Running</NavLink>
+                                  <NavLink to='hiking'>Hiking</NavLink>
                               </MenuItem>
                               <MenuItem minH='45px' as='a' href='#'>
-                                  <NavLink to='comfort'>Comfort Travel</NavLink>
+                                  <NavLink to='comfort'>Casual Wear</NavLink>
                               </MenuItem>
                           </MenuList>
                       </Menu>
