@@ -4,9 +4,9 @@ import { Input, Text, Flex, Box, Menu, MenuButton, MenuList, MenuItem, Button } 
 export default function Register() {
     return (
         <>
-        <Box w='50%' mt='20' mx='auto' h='50vh'>
+        <Box w='50%' mt='20' mx='auto' h='auto' minH='50vh'>
             <Box mb='10'>
-                <Text fontSize='5xl' align='center'>Create Account</Text>
+                <Text fontSize='5xl' align='center' fontWeight='semibold'>Create Account</Text>
             </Box>
             <Box>
                 <Flex gap='4' justifyContent='center' w=''>
@@ -60,9 +60,11 @@ export default function Register() {
                         <MenuItem>14.5</MenuItem>
                     </MenuList>
                 </Menu>
-
-                <Input placeholder='Location' variant='filled' mb={3} type='number' w='50%'></Input>
+                <Input placeholder='Location' variant='filled' mb={20} type='number' w='50%'></Input>
                 </Box>
+                <Flex>
+                    <Button colorScheme='yellow' mx='auto' w='250px'>Submit</Button>
+                </Flex>
             </Box>
         </Box>
         </>
