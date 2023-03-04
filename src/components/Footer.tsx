@@ -8,7 +8,7 @@ export default function Footer() {
         <Box 
             className='footer' 
             bg='blackAlpha.900'
-            minH='45vh'
+            minH='40vh'
             w='100%'
             mt='5'
             >

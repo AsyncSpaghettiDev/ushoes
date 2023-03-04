@@ -21,6 +21,8 @@ import Sale from './pages/Sale'
 import Search from './pages/Search'
 import Login from './pages/Login'
 import Register from './pages/Register';
+import Cart from './pages/Cart';
+import ShoeDetail from './pages/ShoeDetail';
 
 
 // layouts
@@ -45,6 +47,8 @@ const router = createBrowserRouter(
       <Route path="search" element={<Search />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
+      <Route path="cart" element={<Cart />} />
+      <Route path="shoeDetail" element={<ShoeDetail />} />
     </Route>
   )
 )

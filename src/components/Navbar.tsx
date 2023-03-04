@@ -116,7 +116,7 @@ return (
                     <Box>
                         
                         {/* <NavLink to="search">Search</NavLink> */}
-                        <Input mt='4' w='60' borderRadius='25px' colorScheme='blackAlpha' placeholder="Search" variant="filled" mb={3} type="search" />
+                        <Input mt='4' w='80' borderRadius='25px' colorScheme='blackAlpha' placeholder="Search" variant="filled" mb={3} type="search" />
 
                         
                     </Box>

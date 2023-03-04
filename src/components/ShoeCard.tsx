@@ -20,7 +20,7 @@ import { ChevronDownIcon } from '@chakra-ui/icons'
                         $165
                     </Text>
                     <Menu>
-                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} h='9'>
                         Select Size
                         </MenuButton>
                         <MenuList>
@@ -50,7 +50,7 @@ import { ChevronDownIcon } from '@chakra-ui/icons'
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                    <ButtonGroup spacing='2'>
+                    <ButtonGroup spacing='2' mx='auto'>
                     <Button variant='filled' colorScheme='blue'>
                         Buy now
                     </Button>

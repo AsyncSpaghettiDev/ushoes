@@ -25,7 +25,7 @@ export const ShoeCard: React.FC<CardProps> = ({ shoe: { model, image, descriptio
             ${price}
           </Text>
           <Menu>
-            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>
+            <MenuButton as={Button} rightIcon={<ChevronDownIcon />} h='9'>
               Select Size
             </MenuButton>
             <MenuList>
@@ -53,7 +53,7 @@ export const ShoeCard: React.FC<CardProps> = ({ shoe: { model, image, descriptio
           </Menu>
         </Stack>
       </CardBody>
-      <CardFooter mt='-5'>
+      <CardFooter mt='-5' mx='auto'>
         <ButtonGroup spacing='2'>
           <Button variant='solid' colorScheme='yellow' size='sm'>
             Buy now

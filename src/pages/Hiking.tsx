@@ -18,6 +18,7 @@ export default function Trail () {
                     objectFit='cover'
                     height='auto'
                     rounded='4'
+                    pe='10'
                     src={hikingMain} alt="hiking_image" />
             </Box>
             </Flex>
