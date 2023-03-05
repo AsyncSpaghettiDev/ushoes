@@ -1,14 +1,94 @@
-import { Box, Button, Input, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Divider, Input, Text, VStack, Menu, MenuButton, MenuList, MenuItem, Flex } from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 export default function Trail () {
     return (
         <>
-        <Box display='flex' flexDirection='row' >
-            <Box backgroundColor='lightpink' w='70%' h='40vh'>
+        <Box display='flex' flexDirection='row'>
+            <Box w='70%' h='40vh' mt='5'>
+            <VStack>
+                <Box w='100%'>
+                    <Text fontSize='3xl' fontWeight='semibold' ps='5'>
+                        Cart
+                    </Text>
+                </Box>
+                <Box w='95%' h='10vh' display='flex' flexDirection='row' outline='1px solid gray'>
+                    <Box w='20%' backgroundColor='white' h='10vh'>
 
+                    </Box>
+                    <Box w='70%' h='10vh'>
+                        <VStack alignItems='start' ms='4' mt='5'>
+                            <Text fontWeight='semibold'> 
+                                Sneaker 1
+                            </Text>
+                            <Text mb='2'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, doloremque.
+                            </Text>
+
+
+                            <Flex gap='5'>
+                                <Box mt='5'>
+                                    <Menu>
+                                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} h='9'>
+                                        
+                                        </MenuButton>
+                                        <MenuList>
+                                            <MenuItem>5</MenuItem>
+                                            <MenuItem>5.5</MenuItem>
+                                            <MenuItem>6</MenuItem>
+                                            <MenuItem>6.5</MenuItem>
+                                            <MenuItem>7</MenuItem>
+                                            <MenuItem>7.5</MenuItem>
+                                            <MenuItem>8</MenuItem>
+                                            <MenuItem>8.5</MenuItem>
+                                            <MenuItem>9</MenuItem>
+                                            <MenuItem>9.5</MenuItem>
+                                            <MenuItem>10</MenuItem>
+                                            <MenuItem>10.5</MenuItem>
+                                            <MenuItem>11</MenuItem>
+                                            <MenuItem>11.5</MenuItem>
+                                            <MenuItem>12</MenuItem>
+                                            <MenuItem>12.5</MenuItem>
+                                            <MenuItem>13</MenuItem>
+                                            <MenuItem>13.5</MenuItem>
+                                            <MenuItem>14</MenuItem>
+                                            <MenuItem>14.5</MenuItem>
+                                        </MenuList>
+                                    </Menu>
+                                </Box>
+                                <Box mt='5'>
+                                    <Menu>
+                                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} h='9'>
+                                        Quantity
+                                        </MenuButton>
+                                        <MenuList>
+                                            <MenuItem>1</MenuItem>
+                                            <MenuItem>2</MenuItem>
+                                            <MenuItem>3</MenuItem>
+                                            <MenuItem>4</MenuItem>
+                                            <MenuItem>5</MenuItem>
+                                            <MenuItem>6</MenuItem>
+                                            <MenuItem>7</MenuItem>
+                                            <MenuItem>8</MenuItem>
+                                            <MenuItem>9</MenuItem>
+                                            <MenuItem>10</MenuItem>
+                                        </MenuList>
+                                    </Menu>
+                                </Box>
+                                <Box ms='80' mt='5'>
+                                    <Button>Remove</Button>
+                                </Box>
+                            </Flex>
+
+
+                        </VStack>
+                    </Box>
+                </Box>
+            </VStack>
             </Box>
 
-            <Box w='30%' h='40vh'>
+
+            <Box w='30%' h='40vh' mt='5'>
             <VStack>
                 <Box w='100%'>
                     <Text fontSize='3xl' fontWeight='semibold' ps='5'>
@@ -19,22 +99,35 @@ export default function Trail () {
                             placeholder='Promo Code'
                             variant="filled"
                             type='text'
+                            w='60'
                         />
-                        <Button colorScheme='yellow' borderRadius='25px'>Add</Button>
+                        <Button w='20' colorScheme='yellow' borderRadius='25px'>Add</Button>
                     </Box>
-                    <Box display='inline-flex' justifyContent='space-between' px='5' w='100%'>
+                    <Box display='inline-flex' justifyContent='space-between' px='5' w='100%' mb='4'>
                         <Text>Subtotal</Text>
                         <Text>price</Text>
+                    </Box>
+                    <Box display='inline-flex' justifyContent='space-between' px='5' w='100%' mb='4'>
+                        <Text>Estimated Shipping & Handling</Text>
+                        <Text>price</Text>
+                    </Box>
+                    <Box display='inline-flex' justifyContent='space-between' px='5' w='100%' mb='5'>
+                        <Text>Estimated Tax</Text>
+                        <Text>price</Text>
+                    </Box>
+                    <Divider mb='5'/>
+                    <Box display='inline-flex' justifyContent='space-between' px='5' w='100%' mb='5'>
+                        <Text>Total</Text>
+                        <Text>price</Text>
+                    </Box>
+                    <Divider mb='5'/>
+                    <Box w='100%' display='flex' justifyContent='center'>
+                        <Button w='80' colorScheme='yellow' borderRadius='25px'>Checkout</Button>
                     </Box>
                 </Box>
             </VStack>
             </Box>
-            
-
         </Box>
-
-
-
         </>
     )
 }
