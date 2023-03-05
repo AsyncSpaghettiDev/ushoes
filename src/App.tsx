@@ -16,7 +16,7 @@ import Trail from './pages/Trail'
 import Road from './pages/Road'
 import Lifestyle from './pages/Lifestyle'
 import Hiking from './pages/Hiking'
-import Comfort from './pages/Casual'
+import Casual from './pages/Casual'
 import Sale from './pages/Sale'
 import Search from './pages/Search'
 import Login from './pages/Login'
@@ -42,7 +42,7 @@ const router = createBrowserRouter(
       <Route path="road" element={<Road />} />
       <Route path="lifestyle" element={<Lifestyle />} />
       <Route path="hiking" element={<Hiking />} />
-      <Route path="comfort" element={<Comfort />} />
+      <Route path="casual" element={<Casual />} />
       <Route path="sale" element={<Sale />} />
       <Route path="search" element={<Search />} />
       <Route path="login" element={<Login />} />

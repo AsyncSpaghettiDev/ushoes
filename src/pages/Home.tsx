@@ -48,7 +48,7 @@ export default function Home () {
                 width='150px'
               >
                 {/* <NavLink to='men'>Shop Men's</NavLink> */}
-                <a href="/men">Shop men's</a>
+                <a href="./men">Shop men's</a>
               </Button>
               <Button
                 colorScheme='yellow'
@@ -320,7 +320,7 @@ export default function Home () {
                 height='45px'
                 width='100px'
               >
-              <a href="./women">Women's</a>
+              <a href="/casual">Women's</a>
               </Button>
             </Box>
           </Box>

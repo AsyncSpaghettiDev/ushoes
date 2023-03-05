@@ -1,7 +1,7 @@
 import { Box, Flex, Image } from "@chakra-ui/react";
 import casualMain from "../assets/casualMain.jpg"
 
-export default function Trail () {
+export default function Casual () {
     return (
         <>
             <Flex gap='4'>
