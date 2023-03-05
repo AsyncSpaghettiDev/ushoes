@@ -14,7 +14,7 @@ export default function Trail () {
                 </Box>
                 <Box w='95%' h='10vh' display='flex' flexDirection='row' outline='1px solid gray'>
                     <Box w='20%' backgroundColor='white' h='10vh'>
-
+                        
                     </Box>
                     <Box w='70%' h='10vh'>
                         <VStack alignItems='start' ms='4' mt='5'>
@@ -26,10 +26,15 @@ export default function Trail () {
                             </Text>
 
 
-                            <Flex gap='5'>
+                            <Flex gap='2'>
+                                <Box mt='5'>
+                                    <Text border='1px' rounded='5' w='80px' h='9' align='center' pt='1' backgroundColor='white' color='blackAlpha.900'>
+                                        Size
+                                    </Text>
+                                </Box>
                                 <Box mt='5'>
                                     <Menu>
-                                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} h='9'>
+                                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} h='9' w='2'>
                                         
                                         </MenuButton>
                                         <MenuList>
@@ -56,10 +61,15 @@ export default function Trail () {
                                         </MenuList>
                                     </Menu>
                                 </Box>
+                                <Box mt='5' ms='10'>
+                                    <Text border='1px' rounded='5' w='80px' h='9' align='center' pt='1' backgroundColor='white' color='blackAlpha.900'>
+                                        Qty
+                                    </Text>
+                                </Box>
                                 <Box mt='5'>
                                     <Menu>
-                                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} h='9'>
-                                        Quantity
+                                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} h='9' w='2'>
+                                        
                                         </MenuButton>
                                         <MenuList>
                                             <MenuItem>1</MenuItem>
@@ -75,8 +85,8 @@ export default function Trail () {
                                         </MenuList>
                                     </Menu>
                                 </Box>
-                                <Box ms='80' mt='5'>
-                                    <Button>Remove</Button>
+                                <Box ms='10' mt='5'>
+                                    <Button colorScheme='red' h='9'>Remove</Button>
                                 </Box>
                             </Flex>
 
@@ -96,7 +106,7 @@ export default function Trail () {
                     </Text>
                     <Box display='flex' flexDirection='row' justifyContent='space-between' p='5' gap='3' rounded={6} mb='2'>
                         <Input
-                            placeholder='Promo Code'
+                            placeholder='COUPON CODE'
                             variant="filled"
                             type='text'
                             w='60'

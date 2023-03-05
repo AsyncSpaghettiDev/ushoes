@@ -48,7 +48,7 @@ export default function Men() {
                             borderRadius='md'
                             />
                             <Stack mt='3' spacing='2'>
-                                <Heading size='sm' align='center'>Sneaker 1</Heading>
+                                <Heading size='sm' textAlign='center'>Sneaker 1</Heading>
                                 <Text fontSize='xs'>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, harum?
                                 </Text>
