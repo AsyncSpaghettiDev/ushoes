@@ -1,10 +1,12 @@
-import { Box, Button, Divider, Input, Text, VStack, Menu, MenuButton, MenuList, MenuItem, Flex } from "@chakra-ui/react";
+import { Box, Button, Divider, Input, Text, VStack, Menu, MenuButton, MenuList, MenuItem, Flex, Image } from "@chakra-ui/react";
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import React from "react";
+import card1 from '../assets/card1.jpg'
 
 export default function Trail () {
     return (
         <>
-        <Box display='flex' flexDirection='row'>
+        <Box display='flex' flexDirection='row' minH='55vh'>
             <Box w='70%' h='40vh' mt='5'>
             <VStack>
                 <Box w='100%'>
@@ -13,8 +15,18 @@ export default function Trail () {
                     </Text>
                 </Box>
                 <Box w='95%' h='10vh' display='flex' flexDirection='row' outline='1px solid gray'>
-                    <Box w='20%' backgroundColor='white' h='10vh'>
-                        
+                    <Box w='20%' h='10vh'>
+                        <Image
+                        rounded='lg'
+                        mx='auto'
+                        objectFit="contain"
+                        minH='auto'
+                        maxH='10vh'
+                        height='auto'
+                        objectPosition='center'
+                        src={card1}
+                        alt='card_image'
+                        />
                     </Box>
                     <Box w='70%' h='10vh'>
                         <VStack alignItems='start' ms='4' mt='5'>

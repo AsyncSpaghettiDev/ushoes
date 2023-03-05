@@ -24,17 +24,17 @@ export default function Men() {
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, assumenda veritatis ullam quas autem provident enim ea id aliquid deleniti.</p>
                 </Box>
             </Box>
-            <Box minH='85vh'
+            <Box minH='40vh'
                 backgroundColor='blackAlpha'
                 w='100%'
                 display='flex'
+                h='auto'
                 >
-            
             <Wrap
                 spacing='20px'
                 display="flex"
                 flexDirection="row"
-                mx='auto'
+                ms='5'
                 gap='3'
                 mt='5'
                 >
@@ -63,7 +63,8 @@ export default function Men() {
                         </CardBody>
                     </Card>
                 </Box>
-                <Box>
+
+                {/* <Box>
                     <Card maxW='xs'>
                         <CardBody>
                             <Image
@@ -372,7 +373,7 @@ export default function Men() {
                             </ButtonGroup>
                         </CardFooter>
                     </Card>
-                </Box>
+                </Box> */}
             </Wrap>
             </Box>
         </>
