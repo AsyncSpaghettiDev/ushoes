@@ -32,35 +32,6 @@ export default function Trail () {
                                         Size
                                     </Text>
                                 </Box>
-                                <Box mt='5'>
-                                    <Menu>
-                                        <MenuButton as={Button} rightIcon={<ChevronDownIcon />} h='9' w='2'>
-                                        
-                                        </MenuButton>
-                                        <MenuList>
-                                            <MenuItem>5</MenuItem>
-                                            <MenuItem>5.5</MenuItem>
-                                            <MenuItem>6</MenuItem>
-                                            <MenuItem>6.5</MenuItem>
-                                            <MenuItem>7</MenuItem>
-                                            <MenuItem>7.5</MenuItem>
-                                            <MenuItem>8</MenuItem>
-                                            <MenuItem>8.5</MenuItem>
-                                            <MenuItem>9</MenuItem>
-                                            <MenuItem>9.5</MenuItem>
-                                            <MenuItem>10</MenuItem>
-                                            <MenuItem>10.5</MenuItem>
-                                            <MenuItem>11</MenuItem>
-                                            <MenuItem>11.5</MenuItem>
-                                            <MenuItem>12</MenuItem>
-                                            <MenuItem>12.5</MenuItem>
-                                            <MenuItem>13</MenuItem>
-                                            <MenuItem>13.5</MenuItem>
-                                            <MenuItem>14</MenuItem>
-                                            <MenuItem>14.5</MenuItem>
-                                        </MenuList>
-                                    </Menu>
-                                </Box>
                                 <Box mt='5' ms='10'>
                                     <Text border='1px' rounded='5' w='80px' h='9' align='center' pt='1' backgroundColor='white' color='blackAlpha.900'>
                                         Qty
