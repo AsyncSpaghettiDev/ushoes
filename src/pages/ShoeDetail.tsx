@@ -16,9 +16,11 @@ export default function ShoeDetail() {
                     rounded='lg'
                     mx='auto'
                     objectFit="cover"
-                    minH='35vh'
-                    maxH='37vh'
-                    height='auto'
+                    w='85%'
+                    h='37vh'
+                    // minH='35vh'
+                    // maxH='37vh'
+                    // height='auto'
                     objectPosition='center'
                     src={card1}
                     alt='card_image'
@@ -111,16 +113,14 @@ export default function ShoeDetail() {
                                 <DrawerContent>
                                 <DrawerHeader borderBottomWidth='1px'>Cart</DrawerHeader>
                                 <DrawerBody>
-                                    <Box mx='auto' w='100%' h='175px' mt='4' mb='5'>
+                                    <Box mx='auto' w='100%' h='160px' mt='4' mb='5'>
                                         <Flex>
                                             <Box w='40%' h='175px'>
                                             <Image
                                                 rounded='lg'
-                                                mx='auto'
-                                                objectFit="contain"
-                                                minH='auto'
-                                                maxH='175px'
-                                                height='auto'
+                                                objectFit="cover"
+                                                w='85%'
+                                                h='160px'
                                                 objectPosition='center'
                                                 src={card1}
                                                 alt='card_image'

@@ -3,7 +3,7 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import React from "react";
 import card1 from '../assets/card1.jpg'
 
-export default function Trail () {
+export default function Cart () {
     return (
         <>
         <Box display='flex' flexDirection='row' minH='55vh'>
@@ -14,15 +14,14 @@ export default function Trail () {
                         Cart
                     </Text>
                 </Box>
+
+        /** Cart Card */
                 <Box w='95%' h='10vh' display='flex' flexDirection='row' outline='1px solid gray'>
                     <Box w='20%' h='10vh'>
                         <Image
-                        rounded='lg'
-                        mx='auto'
-                        objectFit="contain"
-                        minH='auto'
-                        maxH='10vh'
-                        height='auto'
+                        objectFit="cover"
+                        w='95%'
+                        h='10vh'
                         objectPosition='center'
                         src={card1}
                         alt='card_image'
@@ -72,11 +71,12 @@ export default function Trail () {
                                     <Button colorScheme='red' h='9'>Remove</Button>
                                 </Box>
                             </Flex>
-
-
                         </VStack>
                     </Box>
                 </Box>
+        /** End of Cart Card */
+        
+
             </VStack>
             </Box>
 
