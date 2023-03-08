@@ -69,6 +69,7 @@ return (
                 className="navbar"
                 display='flex'
                 flexDirection='row'
+                backgroundColor='blackAlpha.200'
                 >
                 <Box className="logo">
                     <NavLink to='home'>
@@ -104,7 +105,7 @@ return (
                                 <NavLink to='hiking'>Hiking</NavLink>
                             </MenuItem>
                             <MenuItem minH='45px' as='a' href='#'>
-                                <NavLink to='comfort'>Casual Wear</NavLink>
+                                <NavLink to='casual'>Casual Wear</NavLink>
                             </MenuItem>
                         </MenuList>
                     </Menu>

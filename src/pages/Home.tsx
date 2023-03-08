@@ -265,7 +265,7 @@ export default function Home () {
                 width='100px'
                 me='3'
               >
-                <a href="./men">Men's</a>
+                <a href="./hiking">Men's</a>
               </Button>
               <Button
                 mt='5'
@@ -274,7 +274,7 @@ export default function Home () {
                 height='45px'
                 width='100px'
               >
-                <a href="./women">Women's</a>
+                <a href="./hiking">Women's</a>
               </Button>
               </Box>
             </Box>

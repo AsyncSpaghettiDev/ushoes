@@ -34,14 +34,17 @@ export default function ShoeDetail() {
                                 <Text fontWeight='semibold' fontSize='3xl'>Sneaker 1</Text>
                             </Box>
                             <Box ms='5' mb='3'>
+                                <Text fontSize='lg'>Brand / Color</Text>
+                            </Box>
+                            <Box ms='5' mb='3'>
                                 <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, maiores rem sequi tenetur suscipit quos?</Text>
                             </Box>
                             <Box ms='5' mb='3'>
                                 <Text fontWeight='semibold' fontSize='3xl' color='yellow.500'>$165</Text>
                             </Box>
                         </Box>
-                        <Box w='95%' h='20vh' outline='1px solid gray' rounded='5' overflow='scroll'>
-                            <Flex flexWrap='wrap' gap='7' p='4' mt='2'>
+                        <Box w='95%' h='20vh' outline='1px solid gray' rounded='5' overflow='scroll' backgroundColor='blackAlpha.400'>
+                            <Flex flexWrap='wrap' gap='7' p='4' mt='2' justifyContent='center'>
                                 <Box>
                                     <Button size='lg' w='20'>4</Button>
                                 </Box>
@@ -108,6 +111,9 @@ export default function ShoeDetail() {
                             <Button colorScheme='yellow' w='80' borderRadius='25px' mt='5' onClick={onOpen}>
                                 Add to Cart
                             </Button>
+
+
+                    {/* Drawer Card */}
                             <Drawer placement='right' onClose={onClose} isOpen={isOpen} size='md'>
                                 <DrawerOverlay />
                                 <DrawerContent>
@@ -169,6 +175,8 @@ export default function ShoeDetail() {
                                 </DrawerBody>
                                 </DrawerContent>
                             </Drawer>
+                    {/* End of Drawer Card */}
+
                         </Box>
                     </VStack>
                 </Box>
