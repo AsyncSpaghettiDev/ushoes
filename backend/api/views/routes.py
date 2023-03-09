@@ -10,6 +10,7 @@ def getRoutes(request):
         '/api/token/refresh/',
         '/api/shoes/',
         '/api/coupons/',
+        '/api/members/',
     ]
 
     return Response(routes)

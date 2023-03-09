@@ -1,5 +1,5 @@
 # import shoe models
-from .models import Shoe, ShoeType, ShoeColor
+from .models import Shoe, ShoeType, ShoeColor, Brand
 
 # import shoe serializers
 from .serializers import ShoeSerializer, ShoeTypeSerializer, BrandSerializer
