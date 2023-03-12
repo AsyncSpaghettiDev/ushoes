@@ -48,7 +48,7 @@ export default function Home () {
                 width='150px'
               >
                 {/* <NavLink to='men'>Shop Men's</NavLink> */}
-                <a href="/men">Shop men's</a>
+                <a href="./men">Shop men's</a>
               </Button>
               <Button
                 colorScheme='yellow'
@@ -235,7 +235,7 @@ export default function Home () {
             gap='5'
             me='3'
           >
-            <Box h='50%'>
+            <Box>
               <Image
                 position='relative'
                 objectFit='cover'
@@ -246,17 +246,85 @@ export default function Home () {
                 borderRadius="lg"
                 src={mainRightTop} alt="image_three_one" />
             </Box>
+            <Box
+            position='absolute'
+            color="whiteAlpha.900"
+            fontSize='2xl'
+            fontWeight='semibold'
+            mt='60%'
+            ms='7'
+            >
+            <p>Hiking
+            </p>
+            <Box>
+            <Button
+                mt='5'
+                colorScheme='yellow'
+                borderRadius='50px'
+                height='45px'
+                width='100px'
+                me='3'
+              >
+                <a href="./hiking">Men's</a>
+              </Button>
+              <Button
+                mt='5'
+                colorScheme='yellow'
+                borderRadius='50px'
+                height='45px'
+                width='100px'
+              >
+                <a href="./hiking">Women's</a>
+              </Button>
+              </Box>
+            </Box>
+
             <Box h='50%'>
-              <Image
-                position='relative'
-                objectFit='cover'
-                objectPosition='right'
-                minH='24vh'
-                height='100%'
-                minW='300px'
-                w="100%"
-                borderRadius="lg"
-                src={mainRightBottom} alt="image_three_two" />
+              <Box>
+                <Image
+                  position='relative'
+                  objectFit='cover'
+                  objectPosition='bottom left'
+                  minH='24vh'
+                  height='100%'
+                  minW='300px'
+                  w="100%"
+                  borderRadius="lg"
+                  src={mainRightBottom} alt="image_three_two" />
+              </Box>
+              <Box
+                position='absolute'
+                color="whiteAlpha.900"
+                fontSize='2xl'
+                fontWeight='semibold'
+                mt='-30%'
+                ms='7'
+                >
+                <p>Casual
+                </p>
+              <Box>
+              <Button
+                mt='5'
+                colorScheme='yellow'
+                borderRadius='50px'
+                height='45px'
+                width='100px'
+                me='3'
+              >
+              <a href="./men">Men's</a>
+              </Button>
+              <Button
+                mt='5'
+                colorScheme='yellow'
+                borderRadius='50px'
+                height='45px'
+                width='100px'
+              >
+              <a href="/casual">Women's</a>
+              </Button>
+            </Box>
+          </Box>
+
             </Box>
           </Box>
         </Grid>

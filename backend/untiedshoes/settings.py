@@ -27,6 +27,7 @@ SECRET_KEY = '!80r9^*44e$(9*d!2$fs!bnpn#5yj^agdh4owr6l=ad+1l8k@u'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'untiedshoes.eba-fmqqvsv5.us-east-1.elasticbeanstalk.com',
     'backend.eba-vyebwxuk.us-west-1.elasticbeanstalk.com',
     'localhost',
     '127.0.0.0'
