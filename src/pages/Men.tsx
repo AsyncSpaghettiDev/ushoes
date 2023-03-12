@@ -1,4 +1,4 @@
-import { Wrap, Box, Card, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, ButtonGroup, Button } from '@chakra-ui/react'; 
+import { Wrap, Box, Card, CardBody, Image, Stack, Heading, Text, CardFooter, ButtonGroup, Button } from '@chakra-ui/react'; 
 import card1 from '../assets/card1.jpg'
 import card2 from '../assets/card2.jpg'
 import card3 from '../assets/card3.jpg'
@@ -12,6 +12,7 @@ import card10 from '../assets/card10.jpg'
 import card11 from '../assets/card11.jpg'
 import card12 from '../assets/card12.jpg'
 
+
 export default function Men() {
     return (
         <>
@@ -23,52 +24,47 @@ export default function Men() {
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, assumenda veritatis ullam quas autem provident enim ea id aliquid deleniti.</p>
                 </Box>
             </Box>
-            <Box minH='85vh'
+            <Box minH='40vh'
                 backgroundColor='blackAlpha'
                 w='100%'
                 display='flex'
+                h='auto'
                 >
-            
             <Wrap
                 spacing='20px'
                 display="flex"
                 flexDirection="row"
-                mx='auto'
+                ms='5'
                 gap='3'
                 mt='5'
                 >
                 <Box>
                     <Card maxW='xs'>
                         <CardBody>
-                            <Image
-                            boxSize='sm'
-                            src={card1}
-                            alt='Green Nike'
-                            borderRadius='md'
-                            />
+                                <a href="./shoeDetail">
+                                <Image
+                                boxSize='sm'
+                                src={card1}
+                                alt='Green Nike'
+                                borderRadius='md'
+                                />
+                                </a>
                             <Stack mt='3' spacing='2'>
-                            <Heading size='sm'>Sneaker 1</Heading>
-                            <Text fontSize='xs'>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, harum?
-                            </Text>
-                            <Text color='yellow.500' fontSize='xl'>
-                                $165
-                            </Text>
+                                <a href="./shoeDetail">
+                                <Heading size='sm' textAlign='center'>Sneaker 1</Heading>
+                                </a>
+                                <Text fontSize='xs'>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, harum?
+                                </Text>
+                                <Text color='yellow.500' fontSize='xl'>
+                                    $165
+                                </Text>
                             </Stack>
                         </CardBody>
-                        <CardFooter mt='-5'>
-                            <ButtonGroup spacing='2'>
-                            <Button variant='solid' colorScheme='yellow' size='sm'>
-                                Buy now
-                            </Button>
-                            <Button variant='ghost' colorScheme='yellow' size='sm'>
-                                Add to cart
-                            </Button>
-                            </ButtonGroup>
-                        </CardFooter>
                     </Card>
                 </Box>
-                <Box>
+
+                {/* <Box>
                     <Card maxW='xs'>
                         <CardBody>
                             <Image
@@ -377,7 +373,7 @@ export default function Men() {
                             </ButtonGroup>
                         </CardFooter>
                     </Card>
-                </Box>
+                </Box> */}
             </Wrap>
             </Box>
         </>

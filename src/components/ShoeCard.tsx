@@ -1,15 +1,17 @@
-import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Divider, ButtonGroup, Button } from '@chakra-ui/react'
+import { Card, CardBody, Image, Stack, Heading, Text } from '@chakra-ui/react'
 
  export default function ShoeCard() {
     return (
         <>
             <Card maxW='sm'>
                 <CardBody>
+                    <a href="./shoeDetail">
                     <Image
                     src='./assets/images/card1.jpg'
                     alt='Green Nike'
                     borderRadius='lg'
                     />
+                    </a>
                     <Stack mt='6' spacing='3'>
                     <Heading size='md'>Living room Sofa</Heading>
                     <Text>
@@ -20,17 +22,6 @@ import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Divider, Butto
                     </Text>
                     </Stack>
                 </CardBody>
-                <Divider />
-                <CardFooter>
-                    <ButtonGroup spacing='2'>
-                    <Button variant='filled' colorScheme='blue'>
-                        Buy now
-                    </Button>
-                    <Button variant='ghost' colorScheme='blue'>
-                        Add to cart
-                    </Button>
-                    </ButtonGroup>
-                </CardFooter>
             </Card>
         </>
     )
