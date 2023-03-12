@@ -29,7 +29,7 @@ export default function Cart () {
                 </Box>
 
         /** Cart Card */
-                <Box w='95%' h='10vh' display='flex' flexDirection='row' backgroundColor='blackAlpha.400'>
+                <Box w='95%' h='10vh' display='flex' flexDirection='row' backgroundColor='blackAlpha.4s00'>
                     <Box w='20%' h='10vh'>
                         <Image
                         objectFit="cover"

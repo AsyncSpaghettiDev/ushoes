@@ -37,12 +37,6 @@ const OverlayOne = () => (
     backdropFilter='blur(10px) hue-rotate(20deg)'
 />
 )
-const OverlayTwo = () => (
-<ModalOverlay
-    bg='blackAlpha.100'
-    backdropFilter='blur(10px) hue-rotate(20deg)'
-/>
-)
 
 const { isOpen, onOpen, onClose } = useDisclosure()
 const [overlay, setOverlay] = React.useState(<OverlayOne />)
